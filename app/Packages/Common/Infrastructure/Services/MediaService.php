@@ -28,6 +28,7 @@ class MediaService implements IMediaService
     public function getMedia(int $id): Media|null
     {
         $rec = Media::find($id);
+
         if (! $rec) {
             return null;
         }

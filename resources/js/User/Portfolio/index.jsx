@@ -86,6 +86,8 @@ const Caution = () => {
 }
 
 export default function Index({portfolios, is_exceeded}) {
+
+  console.log(portfolios)
   const {t} = useTranslation('user')
   const {dispatch} = useContext(CommonContext);
 

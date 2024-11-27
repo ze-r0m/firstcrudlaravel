@@ -37,4 +37,9 @@ class Service extends Model
             'name' => $name
         ];
     }
+
+    public function portfolios(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Portfolio::class, 'service_id');
+    }
 }

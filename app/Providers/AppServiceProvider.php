@@ -36,5 +36,9 @@ class AppServiceProvider extends ServiceProvider
         }
         App::setLocale($locale);
         Carbon::setLocale($locale);
+
+//        app()->singleton('currentTenant', function (){
+//            return Auth::user();
+//        });
     }
 }
